@@ -36,7 +36,10 @@ export default function HomePage() {
       .then((data) => {
         setApiData(data);
       })
-      .catch((error) => console.error("Error fetching data", error));
+      .catch((error) => console.error("Error fetching data:", error));
+      // .catch((error) => console.error("Error fetching data", error));
+      // .catch((error) => console.error("Error fetching data:", error));
+    // .console.error(`Error fetching data: ${error.message}`);
   }, []);
 
   return (
@@ -53,3 +56,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+
